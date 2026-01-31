@@ -1,6 +1,82 @@
 *{
-    background-color:black;
+  background-color: rgb(177, 67, 85);
 }
+body{
+    justify-items: center;
+    justify-self: center;
+}
+
 h1{
-    background-color: #fff;;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px auto;
+  padding: 0 10px;
+
+  font-size: clamp(1.5rem, 6vw, 3rem);
+  word-break: break-word;
+  line-height: 1.15;
+
+  animation: slideFromLeft 1.5s ease-out forwards;
+
+}
+
+video{
+    height: 450px;
+    width: 500px;
+    margin: 10px;
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.sparkle {
+  position: fixed;
+  top: -10px;
+  width: 6px;
+  height: 6px;
+  background: gold;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.8;
+  box-shadow: 0 0 10px white;
+}
+
+img{
+ max-width: 90%;
+ height: auto;
+ display: block;
+ border-radius: 10px;
+ border:1px solid #ddd ;
+}
+
+.im{
+  justify-content: center;
+  width: 80%;
+  height: auto;
+}
+
+/* 
+apparition image */
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.im img{
+  animation: slideFromLeft 10s ease-in-out forwards;
 }
