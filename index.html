@@ -15,9 +15,9 @@
 </head>
 <body>
     <h1 id="title" class="fade">JOYEUSE SAINT VALENTIN !!!</h1>
-    <video id="video" src="https://res.cloudinary.com/dnykszsdc/video/upload/v1769690548/Saintvalentin_R%C3%A9alis%C3%A9e_avec_Clipchamp_erdlzl.mp4" autoplay  loop playsinline ></video>
+    <video id="video" src="https://res.cloudinary.com/dnykszsdc/video/upload/v1769690548/Saintvalentin_R%C3%A9alis%C3%A9e_avec_Clipchamp_erdlzl.mp4" autoplay muted loop playsinline ></video>
     <script>
-        const video = document.getElementById("video);
+        const video = document.getElementById("video");
         video.play().catch(() => {});
         document.addEventListenner("click", () => {
             video.muted = false;
@@ -32,6 +32,7 @@
     <script src="index.js"></script>
 </body>
 </html>
+
 
 
 
