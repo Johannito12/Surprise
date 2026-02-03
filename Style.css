@@ -16,7 +16,7 @@ h1{
   word-break: break-word;
   line-height: 1.15;
 
-  animation: slideFromLeft 1.5s ease-out forwards;
+  animation: slideFromLeft 10.5s ease-out forwards;
 
 }
 
@@ -81,5 +81,6 @@ apparition image */
 .im img{
   animation: slideFromLeft 10s ease-in-out forwards;
 }
+
 
 
